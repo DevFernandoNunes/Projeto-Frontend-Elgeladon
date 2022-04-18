@@ -87,10 +87,10 @@ html {
   width: 315px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 375px) {
   .PaletaCardItem,
   .PaletaListaItem {
-    width: 210px;
+    width: 315px;
     height: 180px;
   }
 }
@@ -217,7 +217,7 @@ html {
 
 .Sacola {
   position: relative;
-  left: 10px;
+  left: 5px;
 }
 
 .Sacola__icone {
@@ -275,7 +275,7 @@ html {
   top: 0;
   left: 0;
   z-index: 99999;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -318,19 +318,192 @@ html {
   width: 100%;
 }
 
-.modal-body form {
+.modal-body div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 70%;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-.modal-body form input {
+.modal-body div input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+  outline: none;
+  border: solid 2px #ccc;
+}
+
+.modal-body div textarea {
   width: 100%;
   padding: 0.5rem;
   font-size: 0.8rem;
   margin-bottom: 5px;
   outline: none;
   border: solid 2px #ccc;
+  font-family: sans-serif;
+}
+
+.modal-body div button {
+  margin-top: 20px;
+  padding: 0.5rem;
+  width: 30%;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #161623;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.modal-body div button:hover {
+  background-color: #161623;
+  color: #ffffff;
+  transition: 0.7s;
+}
+
+.modal-close {
+  color: #fff;
+  font-size: 25px;
+  text-decoration: none;
+  transform: scale(0.9);
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  transition: 0.7s;
+  transform: scale(1.15);
+}
+
+.button-modal--create button {
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 0.4rem;
+  color: rgba(255, 255, 255, 0.3);
+  font-weight: 600;
+  border-radius: 0.2rem;
+  width: auto;
+  cursor: pointer;
+  transition: all 0.7s ease-in-out;
+  font-size: 1rem;
+}
+
+.button-modal--create button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+}
+
+.button-modal--create {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  left: 5px;
+}
+
+.Acoes {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  border: none;
+  color: #000;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  max-width: 280px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 55%;
+  margin-top: 30px;
+  background-color: transparent;
+  font-weight: 600;
+  color: #fff;
+  padding: 9px 13px;
+}
+
+.Acoes--editar {
+  background-color: #00d5ff;
+  border: solid 1px #00d5ff;
+  transition: all 0.7s ease-in-out;
+}
+
+.Acoes--editar:hover {
+  background-color: #007086;
+  border: solid 1px #007086;
+  transition: all 0.7s ease-in-out;
+}
+
+.Acoes--apagar {
+  margin-left: 10px;
+  background-color: #ff0000;
+  border: solid 1px #ff0000;
+  transition: all 0.7s ease-in-out;
+}
+
+.Acoes--apagar:hover {
+  background-color: #850000;
+  border: solid 1px #850000;
+  transition: all 0.7s ease-in-out;
+}
+
+.modal-buttons-delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.btns_delete {
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+}
+
+.btn_delete {
+  height: auto;
+  padding: 9px 13px;
+  width: 30%;
+  justify-content: space-between;
+  background-color: transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 15px;
+  transform: scale(0.9);
+}
+
+.btn_delete:hover {
+  transform: scale(1);
+}
+
+.btns_delete--no {
+  margin-left: 10px;
+  background-color: #ff0000;
+  border: solid 1px #ff0000;
+  transition: all 0.7s ease-in-out;
+}
+
+.btns_delete--no:hover {
+  background-color: #850000;
+  border: solid 1px #850000;
+  transition: all 0.7s ease-in-out;
+}
+
+.btns_delete--yes {
+  margin-left: 10px;
+  background-color: #03b600;
+  border: solid 1px #03b600;
+  transition: all 0.7s ease-in-out;
+}
+
+.btns_delete--yes:hover {
+  background-color: #015408;
+  border: solid 1px #015408;
+  transition: all 0.7s ease-in-out;
 }

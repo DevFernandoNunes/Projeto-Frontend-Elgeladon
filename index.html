@@ -29,23 +29,40 @@
         </header>
 
         <section class="button-modal--create">
-            <button type="button">Cadastrar Paleta</button>
+            <button onclick="abrirModal()" type="button">Cadastrar Paleta</button>
         </section>
 
         <section class="modal-overlay" id="overlay">
             <div class="modal">
                 <div class="modal-header">
-                    <h2>Cadastrar uma paleta</h2>
-                    <a href="">X</a>
+                    <h2 id="title-header-modal">Cadastrar uma paleta</h2>
+                    <a class="modal-close" onclick="fecharModal()">X</a>
                 </div>
                 <div class="modal-body">
-                    <form action="">
-                        <input type="text" name="sabor" id="sabor" placeholder="Sabor da paleta">
-                        <input type="text" name="preco" id="preco" placeholder="Preço da paleta">
-                        <input type="text" name="descricao" id="descricao" placeholder="Descrição da paleta">
-                        <input type="text" name="foto" id="foto" placeholder="Foto da paleta">
-                        <button type="submit">Cadastrar</button>
-                    </form>
+                    <div>
+                        <input type="hidden" id="id">
+                        <input type="text" id="sabor" placeholder="Sabor da paleta">
+                        <input type="number" id="preco" placeholder="Preço da paleta">
+                        <textarea type="text" id="descricao" placeholder="Descrição da paleta" rows="5"></textarea>
+                        <input type="text" id="foto" placeholder="Foto da paleta">
+                        <button id="button-form-modal" type="submit" onclick="createPaleta()">Cadastrar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="modal-overlay" id="overlay-delete">
+            <div class="modal">
+                <div class="modal-header">
+                    <h2 id="title-header-modal">Confirmação de deleção</h2>
+                    <a class="modal-close" onclick="fecharModalDelete()">X</a>
+                </div>
+                <div class="modal-buttons-delete">
+                    <p>Deseja realmente apagar essa paleta?</p>
+                    <div class="btns_delete">
+                        <button class="btns_delete--no btn_delete" onclick="fecharModalDelete()">Não</button>
+                        <button class="btns_delete--yes btn_delete">Sim</button>
+                    </div>
                 </div>
             </div>
         </section>
