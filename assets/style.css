@@ -84,7 +84,7 @@ html {
 .PaletaCardItem {
   margin: 20px 0;
   height: 250px;
-  width: 315px;
+  width: 360px;
 }
 
 @media (max-width: 375px) {

@@ -43,7 +43,7 @@ async function findByIdPaletas() {
       <div class="PaletaCardItem__descricao">${paleta.descricao}</div>
       <div class="PaletaListaItem__acoes Acoes">
               <button class="Acoes--editar btn" onclick="abrirModal(${paleta.id})">Editar</button>
-              <button onclick class="Acoes--apagar btn" onclick="abrirModalDelete(${paleta.id})">Apagar</button>
+              <button class="Acoes--apagar btn" onclick="abrirModalDelete(${paleta.id})">Apagar</button>
       </div>
     </div>
       <img class="PaletaCardItem__foto" src="${paleta.foto}" 
