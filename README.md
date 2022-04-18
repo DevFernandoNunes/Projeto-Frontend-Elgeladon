@@ -1,10 +1,10 @@
 # Projeto-Frontend-Elgeladon
 
-![image](https://user-images.githubusercontent.com/95880342/162098750-da5c944c-a651-4f22-9f0a-d8aa51afef78.png)
+![image](https://user-images.githubusercontent.com/95880342/163881918-b72744c4-5c73-410a-9ea8-2462ee86e0cb.png)
 
 <p align="center">
   
-![image](https://user-images.githubusercontent.com/95880342/162099362-58d599e5-bf33-4e37-aa71-b0b526d52940.png)
+![image](https://user-images.githubusercontent.com/95880342/163881984-dbcf1f32-7d63-410b-bdec-04aa178e3d12.png)
 
 </p>
 
@@ -13,6 +13,8 @@
 - [Descrição do projeto](#descrição-do-projeto)
 
 - [Endpoints](#endpoints)
+
+- [Requisitos ](#requisitos )
 
 - [Ferramentas utilizadas](#ferramentas-utilizadas)
 
@@ -41,18 +43,33 @@
    :heavy_check_mark: `Endpoints 5:` [DELETE] Exclusão de paletas por ID
   ###
   
+ ## Requisitos
   
+ :heavy_check_mark: `Requisitos 1:` Lista em memória 
+  ###
+ :heavy_check_mark: `Requisitos 2:` CORS - Liberado
+  ###
+ :heavy_check_mark: `Requisitos 3:` Formatação do código utilizando o Prettier
+  ###
+ :heavy_check_mark: `Requisitos 4:` Frontend Vanilla
+  ###
+ 
+## Cadastrar
+  ![image](https://user-images.githubusercontent.com/95880342/163882367-106db4bc-7d9b-4c7f-98f2-e24a5c6604cd.png)
+###
+## Atualizar/Editar
+  ![image](https://user-images.githubusercontent.com/95880342/163882440-dec84415-1539-4372-a489-5502d7532a8e.png)
+###
+## Apagar
+  ![image](https://user-images.githubusercontent.com/95880342/163882484-00ce1265-bde4-4a9d-9f76-53d21d38544e.png)
+###
+## Pesquisar
+  ![image](https://user-images.githubusercontent.com/95880342/163883108-6685b433-91f4-40f4-88b0-9add40fe0c18.png)
 
-  ![image](https://user-images.githubusercontent.com/95880342/162099734-52e31943-6866-45cc-b07c-68f12b5bdbb1.png)
-###
-  ![image](https://user-images.githubusercontent.com/95880342/162099772-f926a9a6-4377-44ee-8194-0c607634199c.png)
-###
-  ![image](https://user-images.githubusercontent.com/95880342/162099803-b2c71eeb-25ac-4d3b-91e8-7570c1343133.png)
-###
 
 ## Ferramentas utilizadas
  
-<img src="https://user-images.githubusercontent.com/95880342/157155360-d28b477f-156c-4d83-95b4-69799e74e512.png" alt="html" width="60"/> <img src="https://user-images.githubusercontent.com/95880342/157156290-4a862097-4109-42f8-b59c-9ce7d0c80849.png" alt="css" width="60"/>
+<img src="https://user-images.githubusercontent.com/95880342/157155360-d28b477f-156c-4d83-95b4-69799e74e512.png" alt="html" width="60"/> <img src="https://user-images.githubusercontent.com/95880342/157156290-4a862097-4109-42f8-b59c-9ce7d0c80849.png" alt="css" width="60"/> <img src="https://img.icons8.com/color/344/nodejs.png" alt="css" width="60"/> <img src="https://img.icons8.com/color/344/javascript--v1.png" alt="css" width="60"/>
 
 ###
 
@@ -62,16 +79,25 @@ Antes de começar você vai precisar ter instalado em sua máquina as seguintes 
 [Git](https://git-scm.com/), [NodeJS](https://nodejs.org/en/).
 Além disto é bom ter um editor para trabalhar com o código como [VScode](https://code.visualstudio.com/).
 
-Está tudo pronto agora... é só baixar o arquivo e executar. Você pode [acessar o código fonte do projeto](https://github.com/DevFernandoNunes/Projeto-Starbucks)
+Está tudo pronto agora... é só baixar o arquivo e executar. Você pode [acessar o código fonte do projeto](https://github.com/DevFernandoNunes/Projeto-Frontend-Elgeladon)
 
 ## Abrir e rodar o projeto
 
 ```bash
  
-#Clone este repositório
-$ git clone <https://github.com/DevFernandoNunes/Projeto-Starbucks.git>
+#Clone estesrepositórios
+$ git clone <https://github.com/DevFernandoNunes/Projeto-Frontend-Elgeladon.git>
+$ git clone <https://github.com/DevFernandoNunes/Projeto-API-Elgeladon.git>
 
-#Abra o arquivo index.html que está na raiz da pasta principal após clonar o repositório.
+#Abra a pasta Projeto-API-Elgeladon e abra o terminal e de o seguinte comando:
+
+$ npm i
+#Instalará todas as depedências necessárias para rodar o backend
+  
+$ npm run dev
+# Iniciará o servidor 
+
+#Abra o arquivo index.html que está na raiz da pasta principal do projeto Projeto-Frontend-Elgeladon.
  
 ``` 
  
