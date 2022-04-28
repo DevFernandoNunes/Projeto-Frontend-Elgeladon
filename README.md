@@ -70,8 +70,11 @@
 
 ## Ferramentas utilizadas
  
-<img src="https://user-images.githubusercontent.com/95880342/157155360-d28b477f-156c-4d83-95b4-69799e74e512.png" alt="html" width="60"/> <img src="https://user-images.githubusercontent.com/95880342/157156290-4a862097-4109-42f8-b59c-9ce7d0c80849.png" alt="css" width="60"/> <img src="https://img.icons8.com/color/344/nodejs.png" alt="css" width="60"/> <img src="https://img.icons8.com/color/344/javascript--v1.png" alt="css" width="60"/>
+<img src="https://user-images.githubusercontent.com/95880342/157155360-d28b477f-156c-4d83-95b4-69799e74e512.png" alt="html" width="60"/> <img src="https://user-images.githubusercontent.com/95880342/157156290-4a862097-4109-42f8-b59c-9ce7d0c80849.png" alt="css" width="60"/> <img src="https://img.icons8.com/color/344/nodejs.png" alt="css" width="60"/> <img src="https://img.icons8.com/color/344/javascript--v1.png" alt="css" width="60"/> <img src="https://img.icons8.com/ios/344/add-to-database.png" alt="css" width="60"/>
 
+  
+  
+  
 ###
 
 ## Acesso ao projeto
