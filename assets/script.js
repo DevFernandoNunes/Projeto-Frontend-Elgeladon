@@ -173,7 +173,7 @@ async function submitPaleta() {
 
   if (modoEdicaoAtivado) {
     localStorage.setItem("message", "Paleta atualizada com sucesso!");
-    localStorage.setItem("type", "danger");
+    localStorage.setItem("type", "success");
   } else {
     localStorage.setItem("message", "Paleta criada com sucesso!");
     localStorage.setItem("type", "success");
