@@ -29,6 +29,7 @@
 <p align="justify">
   
  Entrega 1 - Backend CRUD memória + Front Vanilla (Read All e Read By Id)
+ Entrega 2 - Backend CRUD MongoDB + Front Vanilla (Create, Update, Delete)Critérios de Avaliação
   
 ## Endpoints
   
