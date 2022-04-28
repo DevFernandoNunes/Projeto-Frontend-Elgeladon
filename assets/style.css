@@ -146,9 +146,9 @@ html {
   margin-bottom: 3rem;
 }
 
-#idPaleta {
+#search-input {
   padding: 0.5rem;
-  width: 315px;
+  width: 280px;
   border: none;
   border-radius: 0.2rem;
 }
@@ -160,7 +160,7 @@ html {
   color: rgba(255, 255, 255, 0.3);
   font-weight: 600;
   border-radius: 0.2rem;
-  width: 330px;
+  width: 50px;
   margin-top: 0.5rem;
   cursor: pointer;
   transition: all 0.7s ease-in-out;
@@ -398,7 +398,7 @@ html {
 
 .button-modal--create {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   position: relative;
   left: 5px;
 }
@@ -506,4 +506,68 @@ html {
   background-color: #015408;
   border: solid 1px #015408;
   transition: all 0.7s ease-in-out;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 25px auto;
+  max-width: 1110px;
+}
+
+.msg-alert {
+  text-align: center;
+  z-index: 999999;
+  font-weight: 600;
+}
+
+.success {
+  background-color: #a4ffa4;
+  color: #006905;
+  border: solid 1px #006905;
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+}
+
+.danger {
+  background-color: #ffa4a4;
+  color: #690000;
+  border: solid 1px #690000;
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+}
+
+.btns-list-cad {
+  display: flex;
+}
+
+.list-all {
+  text-decoration: none;
+  text-align: center;
+  display: none;
+  margin-right: 1rem;
+}
+
+.default-button{
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 0.4rem;
+  color: rgba(255, 255, 255, 0.3);
+  font-weight: 600;
+  border-radius: 0.2rem;
+  width: auto;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  transition: all 0.7s ease-in-out;
+  font-size: 1rem;
+}
+
+.default-button:hover{
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+}
+
+.btn-list-cad{
+  display: flex;
 }

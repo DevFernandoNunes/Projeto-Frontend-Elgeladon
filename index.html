@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="ahortcut icon" type="image/svg" href="./assets/logo.svg">
     <title>El Geladon</title>
 </head>
 
@@ -20,16 +22,21 @@
                 </div>
 
                 <div class="Header__opcoes Opcoes">
-                    <div class="Opcoes__sacola Sacola">
-                        <img src="./assets/icons/sacola.svg" width="40px" class="Sacola__icone"
-                            alt="Sacola de compras" />
-                    </div>
+                    <input type="text" id="search-input" placeholder="Digite o ID da paleta" />
+                    <button class="search-button" id="idPaletaButton" onclick="findByIdPaletas()"><i
+                            class="bi bi-search"></i></button>
                 </div>
             </div>
         </header>
 
-        <section class="button-modal--create">
-            <button onclick="abrirModal()" type="button">Cadastrar Paleta</button>
+        <section class="options">
+            <span class="msg-alert"></span>
+            <div class="btns-list-cad">
+                <div class="btn-list-cad">
+                    <a href="/" class="default-button list-all">Listar todas as paletas</a>
+                    <button type="button" class="default-button" onclick="showModal()">Cadastrar Paleta</button>
+                </div>
+            </div>
         </section>
 
         <section class="modal-overlay" id="overlay">
@@ -45,7 +52,7 @@
                         <input type="number" id="preco" placeholder="Preço da paleta">
                         <textarea type="text" id="descricao" placeholder="Descrição da paleta" rows="5"></textarea>
                         <input type="text" id="foto" placeholder="Foto da paleta">
-                        <button id="button-form-modal" type="submit" onclick="createPaleta()">Cadastrar</button>
+                        <button id="button-form-modal" type="submit" onclick="submitPaleta()">Cadastrar</button>
                     </div>
                 </div>
             </div>
@@ -67,20 +74,10 @@
             </div>
         </section>
 
-        <h2>Pesquisar Paleta</h2>
-        <div class="paleta-escolhida-espaco">
-            <div id="paleta-escolhida-input-espaco">
-                <input type="number" id="idPaleta" placeholder="Digite o ID da paleta e clique em 'Escolher'" />
-                <button id="idPaletaButton" onclick="findByIdPaletas()">ESCOLHER</button>
-            </div>
-            <div id="paletaEscolhida">
-            </div>
-        </div>
-        <div class="title">
-            <h2>Paletas Disponíveis:</h2>
-        </div>
         <div class="Home__container">
             <div class="PaletaLista" id="paletaList">
+            </div>
+            <div id="paletaEscolhida">
             </div>
         </div>
     </main>
